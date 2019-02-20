@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+    <script type="text/javascript">
+      var prx = {};
+      prx.orientation = 'portrait';
+      prx.orientations = {};
+      prx.orientations.portrait = 1;
+      prx.orientations.landscape = 1;
+      prx.project = {};
+      prx.project.id = 'a9fb1f16-f72d-46a5-86e3-22eae6798ed8';
+      prx.project.title = 'Look Up';
+      prx.project.version = -1;
+      prx.project.livepreview = 1;
+      prx.project.account = 'lookup';
+      prx.activePage = {};
+
+      prx.user = {};
+      prx.user.id = '185715';
+      prx.user.editor_access = true;
+      prx.user.delete_access = true;
+      prx.user.uuid = '776ed488-93f8-4a04-af56-318c1a40e14c';
+      prx.user.fullname = 'Vivian Chen';
+
+      prx.skin = 'apple-phone-iphone5-2';
+      prx.embed = 0;
+    </script>
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./lookup-prototype/stylesheets/preview-export-min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="./lookup-prototype/scripts/preview-export-min.js"
+      type="text/javascript"
+    ></script>
+    <title>天文活動 LookUp</title>
+  </head>
+  <body class="work-content page1">
+    <a class="back" href="index.html#ui"></a>
+    <header>
+      <h1>LookUp</h1>
+      <p>觀賞天文活動的最佳指南</p>
+    </header>
+    <div class="wrapper">
+      <article>
+        <p class="summary"></p>
+        <div class="content">
+          <h5>介紹</h5>
+          <p>
+            LookUp 是一個讓一般民眾方便得到關於天文活動訊息的 APP。這個 APP
+            會根據使用者所在的位置，結合天氣跟地形等資訊，提供使用者適合觀看該天文活動的時間跟地點。
+          </p>
+
+          <img src="img/work1_1.jpg" alt="" />
+          <p>
+            這個 APP 是參加 2015 Nasa Space App Challenge 的作品。
+          </p>
+
+          <img src="img/work1_2.jpg" alt="" />
+          <p class="caption">使用便條紙發想跟討論 APP 架構</p>
+
+          <h5>Wireframe 線框圖</h5>
+          <img src="img/work1_3.jpg" alt="" />
+          <p class="caption">APP 架構 ＋ 線框圖草稿</p>
+
+          <h5>Prototype 高擬真原型</h5>
+          <div id="maincontent" class="portrait">
+            <div class="frame_generic">
+              <div
+                class="body_generic skin_apple-phone-iphone5-2 skin-wrapper skin-os-apple skin-device-phone skin-model-iphone5 skin-size-2 skin-color-white skin-orientation-portrait"
+              >
+                <div class="buttons top"></div>
+                <div class="detail-top"></div>
+                <div class="web-search"></div>
+                <div class="buttons left"></div>
+
+                <div class="body_generic_inner">
+                  <iframe
+                    id="pio-playerframe"
+                    src="./lookup-prototype/index.html"
+                    scrolling="NO"
+                    width="640"
+                    height="1136"
+                    style="width:640px; height: 1136px; overflow: hidden;"
+                  ></iframe>
+                </div>
+                <div class="detail-bottom"></div>
+              </div>
+            </div>
+          </div>
+          <p class="caption">
+            使用 Proto.io 製作的高擬真 prototype，可直接在上面操作
+          </p>
+          <h5>APP操作實錄</h5>
+          <iframe
+            width="600"
+            height="336"
+            src="https://www.youtube.com/embed/KcZsYlnMZ8I"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <p>
+            此作品獲得 NASA SPACE APP CHALLENGE 地球區的 People's Choice 獎項
+          </p>
+        </div>
+      </article>
+      <!-- <aside>
+        <div class="info">
+          <p class="info-title">Time</p>
+          <p class="info-detail">2016/05</p>
+        </div>
+        <div class="info">
+          <p class="info-title">Media</p>
+          <p class="info-detail"></p>
+        </div>
+        <div class="info">
+          <p class="info-title">Tool</p>
+          <p class="info-detail">Sketch, Invision, Principle</p>
+        </div>
+
+        </div>
+      </aside> -->
+    </div>
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#ui">UI</a></li>
+        <li><a href="index.html#dev">Dev</a></li>
+        <li><a href="index.html#talks">Talks</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
