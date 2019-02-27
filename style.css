@@ -82,6 +82,13 @@ p {
   height: 100%;
   float: left;
 }
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 /* ============== Home Section ============== */
 .home {
   display: flex;
@@ -120,11 +127,8 @@ p {
   display: flex;
 }
 
-.my-photo {
+.about-image {
   background-image: url('img/selfie.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100%;
   width: 100%;
 }
@@ -153,7 +157,6 @@ p {
 .ui-work {
   width: 250px;
   height: 250px;
-  background-size: cover;
   margin: 2rem;
   display: flex;
   align-items: center;
@@ -197,16 +200,12 @@ p {
 }
 
 .dev-work {
-  display: inline-block;
   width: 320px;
   height: 230px;
-  background-size: auto 100%;
-  background-position: center;
   margin: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-size 3s ease-in-out, filter 0.5s;
 }
 .dev-work1 {
   background-image: url('img/fish_game.png');
@@ -247,8 +246,6 @@ p {
   height: 300px;
   width: 60%;
   background-image: url('img/talk_1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -389,28 +386,13 @@ header p {
   margin-bottom: 3rem;
   font-size: 0.8rem;
 }
-/* 
-.work-content aside {
-  background-color: var(--white);
-  width: 25%;
-  padding: 2rem;
-  padding-top: 3rem;
-  font-size: 0.8rem;
-} */
+
 .work-content img {
   width: 100%;
   padding: 1rem;
   margin: 0 auto;
   display: block;
 }
-/* 
-aside .info {
-  margin-bottom: 3rem;
-}
-aside .info-title {
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
-} */
 
 footer {
   margin-top: 10rem;
@@ -422,7 +404,8 @@ footer {
 }
 footer ul {
   display: flex;
-  width: 100%;
+  width: 60%;
+  justify-content: space-around;
 }
 footer ul li {
   list-style: none;
@@ -432,7 +415,6 @@ footer ul li:hover {
 }
 footer ul li a {
   color: var(--white);
-  padding: 3rem;
 }
 iframe {
   margin: 0 auto;
@@ -499,6 +481,7 @@ iframe {
   footer ul {
     flex-direction: column;
     margin-bottom: 3rem;
+    justify-content: center;
   }
   footer ul li {
     margin-top: 2rem;
