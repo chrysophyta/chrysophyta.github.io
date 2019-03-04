@@ -85,7 +85,7 @@ p {
 .img {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   height: 100%;
   width: 100%;
 }
@@ -131,6 +131,7 @@ p {
   background-image: url('img/selfie.jpg');
   height: 100%;
   width: 100%;
+  background-size: cover;
 }
 .about-content {
   color: white;
@@ -161,18 +162,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.ui-work-title {
-  opacity: 0;
-  color: white;
-  z-index: 1;
-}
-.ui-work:hover {
-  filter: brightness(70%);
-}
-.ui-work:hover .ui-work-title {
-  opacity: 1;
-}
+
 .ui-work1 {
   background-image: url('img/work1.png');
 }
@@ -206,6 +198,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .dev-work1 {
   background-image: url('img/fish_game.png');
@@ -215,22 +208,35 @@ p {
   background-image: url('img/todo_list.png');
 }
 
-.dev-work-title {
+.work-title {
   color: #ffffff;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
-.dev-work:hover + .dev-work-title {
+
+/* ============== hover Section ============== */
+
+.ui-work > .img,
+.dev-work > .img {
+  transition: all 0.3s 0.1s ease-out;
+}
+
+.ui-work:hover > .img,
+.dev-work:hover > .img {
+  filter: brightness(50%);
+  background-size: auto 110%;
+  transition: background-size 0.3s 0.1s ease-in-out, filter 1s ease;
+}
+
+.dev-work:hover .work-title,
+.ui-work:hover .work-title {
   opacity: 1;
 }
-.dev-work:hover {
-  filter: brightness(70%);
-  background-size: auto 120%;
-  transition: background-size 3s ease-in-out, filter 0.5s;
-}
+
 /* ============== Talks leSection ============== */
 
 .talks {
